@@ -1,0 +1,157 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 14px 0;
+  transition: padding 0.25s ease;
+}
+
+.site-header--scrolled {
+  padding: 8px 0;
+}
+
+.site-header__inner {
+  position: relative;
+}
+
+/* The GlassSurface component sizes itself from width/height props, so we
+   just let it fill the row. Its own displacement-map effect needs a busy
+   background behind it to read as "glass" — the hero's dark gradient sits
+   directly behind the sticky header, so the frost is visible from the top. */
+.site-header__glass {
+  width: 100% !important;
+}
+
+.site-header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 0 10px 0 14px;
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--ink);
+  flex: 0 0 auto;
+}
+
+.site-header__brand-mark {
+  color: var(--sky-deep);
+  display: flex;
+}
+
+.site-header__brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.site-header__brand-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.site-header__brand-sub {
+  font-family: var(--font-mono);
+  direction: ltr;
+  font-size: 0.55rem;
+  letter-spacing: 0.14em;
+  color: var(--sky-deep);
+}
+
+.site-header__nav {
+  display: none;
+  align-items: center;
+  gap: 22px;
+}
+
+.site-header__link {
+  text-decoration: none;
+  color: var(--ink-soft);
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: color 0.15s ease;
+}
+
+.site-header__link:hover {
+  color: var(--sky-deep);
+}
+
+.site-header__cta {
+  display: none;
+  text-decoration: none;
+  background: var(--sky);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 9px 18px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.site-header__cta:hover {
+  background: var(--sky-deep);
+}
+
+.site-header__toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.site-header__toggle span {
+  display: block;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--ink);
+}
+
+.site-header__mobile-menu {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgba(11, 34, 48, 0.14);
+  overflow: hidden;
+}
+
+.site-header__mobile-menu a {
+  padding: 14px 18px;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  border-bottom: 1px solid var(--sand-deep);
+}
+
+.site-header__mobile-cta {
+  color: var(--sky-deep) !important;
+}
+
+@media (min-width: 860px) {
+  .site-header__nav {
+    display: flex;
+  }
+  .site-header__cta {
+    display: inline-block;
+  }
+  .site-header__toggle {
+    display: none;
+  }
+}

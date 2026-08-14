@@ -1,0 +1,87 @@
+.hero {
+  position: relative;
+  padding: 26px 0 64px;
+  overflow: hidden;
+  color: var(--white);
+}
+
+/* Dark teal gradient stands in for photography until real product/site
+   photography is dropped in — keeps the sticky glass header legible
+   against something, and reads as "deep water" rather than a flat color. */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(120% 90% at 18% -10%, rgba(143, 211, 236, 0.35), transparent 55%),
+    linear-gradient(165deg, #0b2230 0%, #123448 55%, #1f6b8f 100%);
+}
+
+.hero__inner {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.hero__heading {
+  color: var(--white);
+  font-family: var(--font-display);
+}
+
+.hero__subhead {
+  max-width: 46ch;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0;
+}
+
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.hero__primary,
+.hero__secondary {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px 22px;
+  border-radius: 999px;
+}
+
+.hero__primary {
+  background: var(--white);
+  color: var(--ink);
+}
+
+.hero__secondary {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: var(--white);
+}
+
+@media (min-width: 640px) {
+  .hero__actions {
+    flex-direction: row;
+  }
+  .hero__primary,
+  .hero__secondary {
+    padding: 14px 28px;
+  }
+}
+
+@media (min-width: 860px) {
+  .hero {
+    padding: 20px 0 96px;
+  }
+  .hero__inner {
+    padding-top: 90px;
+  }
+  .hero__subhead {
+    font-size: 1.12rem;
+  }
+}

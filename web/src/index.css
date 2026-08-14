@@ -1,0 +1,97 @@
+/* ============================================================
+   RIWATEK — Design tokens
+   Palette pulled from the brand mark + the site's own subject
+   (irrigation water, Saudi limestone/sand, brass fittings) —
+   deliberately not the cream/terracotta or near-black/neon defaults.
+   ============================================================ */
+:root {
+  /* Color */
+  --ink: #0b2230;          /* deep water-teal — primary text & dark surfaces */
+  --ink-soft: #26414f;     /* secondary text on light backgrounds */
+  --sand: #efeae0;         /* warm limestone — page background */
+  --sand-deep: #e2dbcb;    /* card / section background, one step darker */
+  --sky: #3691bf;          /* brand blue, from the Riwatek mark */
+  --sky-deep: #1f6b8f;     /* pressed / darker blue for contrast text on sky */
+  --aqua: #8fd3ec;         /* light aqua — highlights, glass tint */
+  --brass: #b98b4e;        /* warm brass — sparing accent (fittings, CTAs) */
+  --white: #ffffff;
+
+  /* Type */
+  --font-display: 'Tajawal', 'IBM Plex Sans Arabic', sans-serif;
+  --font-body: 'IBM Plex Sans Arabic', 'Tajawal', sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+
+  /* Layout */
+  --max-width: 1180px;
+  --gutter: 20px;
+  --radius-lg: 22px;
+  --radius-md: 14px;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--sand);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Utility numerals (prices, SKUs) stay LTR and monospaced for readability
+   inside Arabic paragraphs, per convention on Saudi e-commerce sites. */
+.num {
+  font-family: var(--font-mono);
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sky-deep);
+  direction: ltr;
+  display: inline-block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

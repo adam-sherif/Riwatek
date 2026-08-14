@@ -1,0 +1,7 @@
+[
+  { "id": "controllers", "name_ar": "وحدات التحكم", "slug": "controllers" },
+  { "id": "sprinklers", "name_ar": "الرشاشات", "slug": "sprinklers" },
+  { "id": "valves", "name_ar": "الصمامات وصناديق الصمامات", "slug": "valves" },
+  { "id": "pipes", "name_ar": "الأنابيب والفيتنجات", "slug": "pipes" },
+  { "id": "accessories", "name_ar": "الملحقات", "slug": "accessories" }
+]

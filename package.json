@@ -1,0 +1,13 @@
+{
+  "name": "riwatek-rain-bird-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes the Rain Bird irrigation category page on mnt-sa.com for Riwatek's product database import.",
+  "main": "scrape-rain-bird.js",
+  "scripts": {
+    "start": "node scrape-rain-bird.js"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0",
+    "cheerio": "^1.0.0"
+  }
+}

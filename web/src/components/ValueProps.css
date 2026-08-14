@@ -1,0 +1,51 @@
+.value-props {
+  padding: 40px 0;
+  background: var(--sand);
+}
+
+.value-props__grid {
+  display: grid;
+  gap: 16px;
+}
+
+.value-props__card {
+  position: relative;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 24px 22px;
+  box-shadow: 0 10px 30px -20px rgba(11, 34, 48, 0.25);
+}
+
+.value-props__dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brass);
+  margin-bottom: 14px;
+}
+
+.value-props__card h3 {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.08rem;
+  color: var(--ink);
+}
+
+.value-props__card p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  font-size: 0.94rem;
+}
+
+@media (min-width: 720px) {
+  .value-props {
+    padding: 60px 0;
+  }
+  .value-props__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
