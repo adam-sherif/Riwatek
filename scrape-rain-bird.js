@@ -20,6 +20,7 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 
 const TARGET_URL =
+  process.env.SCRAPER_TARGET_URL ||
   'https://mnt-sa.com/ar/%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A-%D8%B1%D9%8A%D9%86-%D8%A8%D9%8A%D8%B1%D8%AF-Rain-Bird/c800345116';
 
 const OUTPUT_FILE = 'rain_bird_products.json';
@@ -62,6 +63,31 @@ async function autoScroll(page) {
       }, 300);
     });
   });
+}
+
+async function clickLoadMore(page) {
+  // Click the Arabic "تحميل المزيد" (load more) button repeatedly
+  const maxClicks = 12;
+  for (let i = 0; i < maxClicks; i++) {
+    try {
+      let btn = page.locator('button:has-text("تحميل المزيد")');
+      let count = await btn.count();
+      if (!count) {
+        btn = page.locator('text=تحميل المزيد');
+        count = await btn.count();
+      }
+      if (!count) break;
+      console.log('Clicking load-more button (attempt', i + 1, ')');
+      await btn.first().click({ timeout: 7000 });
+      // wait for additional items to render
+      await page.waitForTimeout(1200);
+      await autoScroll(page);
+      await page.waitForTimeout(800);
+    } catch (err) {
+      console.warn('Load-more click failed or no more buttons:', err.message || err);
+      break;
+    }
+  }
 }
 
 function firstMatchingSelector($, selectors) {
@@ -119,6 +145,12 @@ async function scrapeCategory() {
   // Give Salla's front-end JS a moment to hydrate the product grid.
   await page.waitForTimeout(2500);
   await autoScroll(page);
+  // Try clicking the "load more" button if present to reveal lazy-loaded items
+  try {
+    await clickLoadMore(page);
+  } catch (e) {
+    console.warn('clickLoadMore error:', e.message || e);
+  }
   await page.waitForTimeout(1500);
 
   const html = await page.content();
@@ -236,18 +268,30 @@ async function scrapeCategory() {
 }
 
 async function fetchProductsFromApi(categoryId) {
-  const url = `https://api.salla.dev/store/v1/products?source=categories&filterable=1&source_value[]=${encodeURIComponent(
+  const baseUrl = `https://api.salla.dev/store/v1/products?source=categories&filterable=1&source_value[]=${encodeURIComponent(
     categoryId
-  )}`;
-  const res = await fetch(url, { method: 'GET', headers: { Accept: 'application/json' } });
-  if (!res.ok) throw new Error(`API request failed: ${res.status} ${res.statusText}`);
-  const body = await res.json();
-  // API returns an object with `data` or an array — try to normalize
-  if (Array.isArray(body)) return body;
-  if (body && Array.isArray(body.data)) return body.data;
-  // some Salla APIs wrap results in { products: [...] }
-  if (body && Array.isArray(body.products)) return body.products;
-  return [];
+  )}&store_id=692774979`;
+
+  const aggregated = [];
+  let nextUrl = baseUrl;
+
+  while (nextUrl) {
+    const res = await fetch(nextUrl, { method: 'GET', headers: { Accept: 'application/json' } });
+    if (!res.ok) throw new Error(`API request failed: ${res.status} ${res.statusText}`);
+    const body = await res.json();
+
+    const pageItems = Array.isArray(body) ? body : body.data || body.products || [];
+    aggregated.push(...pageItems);
+
+    // follow cursor.next if present (Salla uses cursor-based pagination)
+    if (body && body.cursor && body.cursor.next) {
+      nextUrl = body.cursor.next;
+    } else {
+      nextUrl = null;
+    }
+  }
+
+  return aggregated;
 }
 
 scrapeCategory().catch((err) => {

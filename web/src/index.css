@@ -88,6 +88,14 @@ button {
   display: inline-block;
 }
 
+/* Room for the fixed sticky mobile WhatsApp CTA (StickyMobileCTA) so it
+   never overlaps the last bit of page content. */
+@media (max-width: 859px) {
+  body {
+    padding-bottom: 58px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.001ms !important;

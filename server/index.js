@@ -34,6 +34,17 @@ app.get('/api/products', async (req, res, next) => {
   }
 });
 
+app.get('/api/products/:id', async (req, res, next) => {
+  try {
+    const products = await readJSON('products.json');
+    const product = products.find(p => p.id === req.params.id);
+    if (!product) return res.status(404).json({ error: 'Product not found' });
+    res.json(product);
+  } catch (err) {
+    next(err);
+  }
+});
+
 app.use((err, _req, res, _next) => {
   console.error(err);
   res.status(500).json({ error: 'Internal server error' });

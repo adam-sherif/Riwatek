@@ -1,11 +1,12 @@
 import SpecularButton from './react-bits/SpecularButton';
+import { buildWhatsAppLink } from '../lib/whatsapp';
 import './CTASection.css';
 
 const CTASection = () => (
   <section id="cta" className="cta-section">
     <div className="container cta-section__inner">
       <h2>جاهز تطلب بالجملة؟</h2>
-      <p>أرسل لنا احتياجك من منتجات الري والمياه، وفريقنا يرجعلك بعرض سعر خلال يوم عمل.</p>
+      <p>أرسل لنا احتياجك من منتجات الري والمياه عبر واتساب، وفريقنا يرجعلك بعرض سعر بسرعة.</p>
 
       {/* The one WebGL-driven moment on the page besides the header glass —
           reserved for the single highest-intent action so it doesn't compete
@@ -21,10 +22,10 @@ const CTASection = () => (
         autoAnimate
         speed={0.25}
         onClick={() => {
-          window.location.href = 'mailto:sales@riwatek.com?subject=طلب عرض سعر بالجملة';
+          window.open(buildWhatsAppLink('مرحباً، أرغب في طلب عرض سعر بالجملة من ريواتك.'), '_blank', 'noopener');
         }}
       >
-        تواصل مع فريق المبيعات
+        تواصل مع فريق المبيعات عبر واتساب
       </SpecularButton>
     </div>
   </section>

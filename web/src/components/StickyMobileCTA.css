@@ -1,0 +1,26 @@
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  inset-inline: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #25d366;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px;
+  padding-bottom: max(14px, env(safe-area-inset-bottom));
+  box-shadow: 0 -6px 20px rgba(11, 34, 48, 0.18);
+}
+
+/* Desktop already has the header CTA and the dedicated CTA section in view —
+   the sticky bar is a mobile-specific pattern (thumb's-reach checkout nudge)
+   and would just be redundant chrome above ~860px. */
+@media (min-width: 860px) {
+  .sticky-cta {
+    display: none;
+  }
+}

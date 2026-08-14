@@ -1,15 +1,27 @@
 import AccordionGallery from './react-bits/AccordionGallery';
 import './Categories.css';
 
-// Pulled from the Rain Bird category structure we scraped earlier — swap
-// `image` for real product/category photography once available, and
-// `link` for the matching category route once the backend is wired up.
+// Real cover photos, one representative product per category, pulled from
+// the actual scraped data (server/data/products.json) — not placeholders.
+// Only categories that currently have real products are listed; "pipes" and
+// "accessories" will be added here once real products exist for them,
+// rather than showing a blank/broken tile.
 const CATEGORY_ITEMS = [
-  { image: '/media/categories/controllers.jpg', label: 'وحدات التحكم', link: '#' },
-  { image: '/media/categories/sprinklers.jpg', label: 'الرشاشات', link: '#' },
-  { image: '/media/categories/valves.jpg', label: 'الصمامات وصناديق الصمامات', link: '#' },
-  { image: '/media/categories/pipes.jpg', label: 'الأنابيب والفيتنجات', link: '#' },
-  { image: '/media/categories/accessories.jpg', label: 'الملحقات', link: '#' }
+  {
+    image: 'https://cdn.salla.sa/xlgpQ/a018a4da-5b59-4b27-923a-8c506a4b20d8-500x500-cbWsj2HAjRY7UTtyeYztlD5FesobkGkhlIwNw6Jk.webp',
+    label: 'وحدات التحكم',
+    link: '/products?category=controllers'
+  },
+  {
+    image: 'https://cdn.salla.sa/xlgpQ/38534c26-d42b-4956-baf0-591ca0b03965-500x500-faEtyJvl1gAZhzxBweuADL9nFZE0XXIfnmAynj7P.webp',
+    label: 'الرشاشات والفوهات',
+    link: '/products?category=sprinklers'
+  },
+  {
+    image: 'https://cdn.salla.sa/xlgpQ/1de2d3a0-b5c4-41a6-af3a-18bf43837896-500x500-ZLJlAzW4q0dLVAcQX66pvnsvb1aqzqyCiNJ7lkfk.jpg',
+    label: 'الصمامات',
+    link: '/products?category=valves'
+  }
 ];
 
 const Categories = () => (
