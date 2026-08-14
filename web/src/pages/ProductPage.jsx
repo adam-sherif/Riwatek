@@ -84,8 +84,28 @@ const ProductPage = () => {
     );
   }
 
+  const CATEGORY_LABELS = {
+    controllers: 'وحدات التحكم',
+    sprinklers: 'الرشاشات والفوهات',
+    valves: 'الصمامات',
+    pipes: 'الأنابيب والفيتنجات',
+    accessories: 'الملحقات'
+  };
+
   return (
     <main className="product-page">
+      <div className="container">
+        <Breadcrumbs
+          items={[
+            { label: 'الرئيسية', to: '/' },
+            { label: 'المنتجات', to: '/products' },
+            ...(CATEGORY_LABELS[product.category]
+              ? [{ label: CATEGORY_LABELS[product.category], to: `/products?category=${product.category}` }]
+              : []),
+            { label: product.title_ar }
+          ]}
+        />
+      </div>
       <div className="container product-page__grid">
         <div className="product-page__image-wrap">
           {product.image ? (
