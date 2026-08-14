@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://cdn.assets.salla.network/themes/1247874246/1.371.0/product-card.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://cdn.assets.salla.network/themes/1247874246/1.371.0/product.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://cdn.assets.salla.network/themes/1247874246/1.371.0/add-product-toast.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://mnt-sa.com/_app/e/api/s/page",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://api.salla.dev/store/v1/menus/header?store_id=692774979&lang=ar",
+    "method": "GET",
+    "resourceType": "xhr"
+  },
+  {
+    "url": "https://api.salla.dev/store/v1/menus/footer?store_id=692774979&lang=ar",
+    "method": "GET",
+    "resourceType": "xhr"
+  },
+  {
+    "url": "https://api.salla.dev/store/v1/currencies",
+    "method": "GET",
+    "resourceType": "xhr"
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/596112044/?random=1786667695293&cv=11&fst=1786667695293&bg=ffffff&guid=ON&async=1&gtm=45be68c1v9174294384z8860586897za20gzb811065323zd811065323xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131808~118897920~118897930~119367802~119367810~119527019~120125304~120385422&u_w=1280&u_h=720&url=https%3A%2F%2Fmnt-sa.com%2Far%2F%25D8%25A3%25D9%2586%25D8%25B8%25D9%2585%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A-%25D8%25B1%25D9%258A%25D9%2586-%25D8%25A8%25D9%258A%25D8%25B1%25D8%25AF-Rain-Bird%2Fc800345116&rcb=17&label=xLBBCKSDk6IYEKzln5wC&frm=0&tiba=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1910298592.1786667693&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=4",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/596112044/?random=1786667695293&cv=11&fst=1786667695293&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be68c1v9174294384z8860586897za20gzb811065323zd811065323xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131808~118897920~118897930~119367802~119367810~119527019~120125304~120385422&u_w=1280&u_h=720&url=https%3A%2F%2Fmnt-sa.com%2Far%2F%25D8%25A3%25D9%2586%25D8%25B8%25D9%2585%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A-%25D8%25B1%25D9%258A%25D9%2586-%25D8%25A8%25D9%258A%25D8%25B1%25D8%25AF-Rain-Bird%2Fc800345116&rcb=17&label=xLBBCKSDk6IYEKzln5wC&frm=0&tiba=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1910298592.1786667693&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&_tu=CA&ept=68&gcp=5",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/596112044/?random=1786667695458&cv=11&fst=1786667695458&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68c1v9174294384z8811065323za20gzb811065323zd811065323xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131808~118897920~118897930~119367802~119367810~119527019~120125304~120385422&u_w=1280&u_h=720&url=https%3A%2F%2Fmnt-sa.com%2Far%2F%25D8%25A3%25D9%2586%25D8%25B8%25D9%2585%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A-%25D8%25B1%25D9%258A%25D9%2586-%25D8%25A8%25D9%258A%25D8%25B1%25D8%25AF-Rain-Bird%2Fc800345116&rcb=17&frm=0&tiba=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1910298592.1786667693&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/596112044/?random=1786667695458&cv=11&fst=1786667695458&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68c1v9174294384z8811065323za20gzb811065323zd811065323xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131808~118897920~118897930~119367802~119367810~119527019~120125304~120385422&u_w=1280&u_h=720&url=https%3A%2F%2Fmnt-sa.com%2Far%2F%25D8%25A3%25D9%2586%25D8%25B8%25D9%2585%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A-%25D8%25B1%25D9%258A%25D9%2586-%25D8%25A8%25D9%258A%25D8%25B1%25D8%25AF-Rain-Bird%2Fc800345116&rcb=17&frm=0&tiba=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1910298592.1786667693&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.google.com/measurement/conversion?random=1786667696356&cv=11&tid=G-41JCB7QFTX&fst=1786667696356&fmt=8&en=first_visit&gtm=45je68d0h2v9118500465z8860586897za20gzb860586897zd860586897xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~118897920~118897930~119367802~119367810~119527020~120125305~120385423&u_w=1280&u_h=720&url=https%3A%2F%2Fmnt-sa.com%2Far%2F%25D8%25A3%25D9%2586%25D8%25B8%25D9%2585%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A-%25D8%25B1%25D9%258A%25D9%2586-%25D8%25A8%25D9%258A%25D8%25B1%25D8%25AF-Rain-Bird%2Fc800345116&gacid=663628106.1786667696&frm=0&tiba=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%20%7C%20%D8%A7%D9%84%D9%85%D9%87%D9%8A%D8%AF%D8%A8%20%7C%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%20%D8%A7%D9%84%D9%85%D9%87%D9%8A%D8%AF%D8%A8%20%7C%20AL%20Muhaideb%20National&npa=0&pscdl=noapi&auid=1910298592.1786667693&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&rcb=2",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-41JCB7QFTX&gtm=45je68d0h2v9118500465z8860586897za20gzb860586897zd860586897&_p=1786667691208&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGAC&_prs=ok&are=1&cid=663628106.1786667696&frm=0&pscdl=noapi&rcb=2&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115616985~115938466~115938469~118897920~118897930~119367802~119367810~119527020~120125305~120385423&sid=1786667696&sct=1&seg=0&dl=https%3A%2F%2Fmnt-sa.com%2Far%2F%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A-%D8%B1%D9%8A%D9%86-%D8%A8%D9%8A%D8%B1%D8%AF-Rain-Bird%2Fc800345116&dt=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%20%7C%20%D8%A7%D9%84%D9%85%D9%87%D9%8A%D8%AF%D8%A8%20%7C%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%20%D8%A7%D9%84%D9%85%D9%87%D9%8A%D8%AF%D8%A8%20%7C%20AL%20Muhaideb%20National&en=page_view&_fv=2&_ss=1&tfd=7818",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-D824MKKMHB&gtm=45je68c1v886133148z8811065323za20gzb811065323zd811065323&_p=1786667691208&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=663628106.1786667696&frm=0&pscdl=noapi&rcb=4&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938468~118395333~118897920~118897930~119367802~119367810~119527020~120385423&sid=1786667697&sct=1&seg=0&dl=https%3A%2F%2Fmnt-sa.com%2Far%2F%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A-%D8%B1%D9%8A%D9%86-%D8%A8%D9%8A%D8%B1%D8%AF-Rain-Bird%2Fc800345116&dt=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%20%7C%20%D8%A7%D9%84%D9%85%D9%87%D9%8A%D8%AF%D8%A8%20%7C%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%20%D8%A7%D9%84%D9%85%D9%87%D9%8A%D8%AF%D8%A8%20%7C%20AL%20Muhaideb%20National&en=page_view&_fv=2&_ss=2&_c=1&evnid=eb16f89284a335ec9245000d7413f74b6b9a792d&tfd=9037",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.googletagmanager.com/a?id=G-D824MKKMHB&v=3&t=t&pid=399590029&gtm=45je68c1v886133148za20gzb811065323zd811065323&cv=1&rv=68c1&tc=12&tag_exp=115616985~115938466~115938468~118395333~118897920~118897930~119367802~119367810~119527020~120385423&es=1&e=gtm.init&eid=2&u=AAAAAAAAAAAAAAAg&h=Ag&tr=1ogt1pdatav2.1ccdgafirst.1setproductsettings.1ccdemdownload.1ccdemoutboundclick.1ccdempageview.1ccdemscroll.1ccdemsitesearch.1ccdemvideo.1ccdconversionmarking.1ccdgalast&ti=2ogt1pdatav2.2ccdgafirst.2setproductsettings.2ccdemdownload.2ccdemoutboundclick.2ccdempageview.2ccdemscroll.2ccdemsitesearch.2ccdemvideo.2ccdconversionmarking.2ccdgalast&z=0",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://api.salla.dev/store/v1/advertisements?page=product.index",
+    "method": "GET",
+    "resourceType": "xhr"
+  },
+  {
+    "url": "https://api.salla.dev/store/v1/products?source=categories&filterable=1&source_value[]=800345116",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://analytics.tiktok.com/api/v2/pixel",
+    "method": "POST",
+    "resourceType": "ping"
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/596112044/?random=1786667695293&cv=11&fst=1786665600000&bg=ffffff&guid=ON&async=1&gtm=45be68c1v9174294384z8860586897za20gzb811065323zd811065323xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131808~118897920~118897930~119367802~119367810~119527019~120125304~120385422&u_w=1280&u_h=720&url=https%3A%2F%2Fmnt-sa.com%2Far%2F%25D8%25A3%25D9%2586%25D8%25B8%25D9%2585%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A-%25D8%25B1%25D9%258A%25D9%2586-%25D8%25A8%25D9%258A%25D8%25B1%25D8%25AF-Rain-Bird%2Fc800345116&rcb=17&label=xLBBCKSDk6IYEKzln5wC&frm=0&tiba=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1910298592.1786667693&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS0wEAEQoqgcejN1tQJyr7uXrbEpYiOwuyGcSWGOoIRhnn3AuthwNR5Qyk3lDyHcSog7hWqfF7CEOmn3buZmNGYB3CToCNAPn2i8E8HG2Gv8i7JVlwquDrPbI4DBfG4igIy0sTxpsYCqNE7llzCQLszC5zPaNmFus4dBbXFgNwp5hzfV5v8jdRalu60mwzOan7N-WTY2xneBiCf7H7dYSCgFnZbtfD0eyehsoOuUqHu4oybgkcfnmQY8S2jwAPUNSN-amqgbKZGsE17PknkrKvtYPssT7D&random=3403172972&rmt_tld=0&ipr=y",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://www.google.com.eg/pagead/1p-user-list/596112044/?random=1786667695293&cv=11&fst=1786665600000&bg=ffffff&guid=ON&async=1&gtm=45be68c1v9174294384z8860586897za20gzb811065323zd811065323xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131808~118897920~118897930~119367802~119367810~119527019~120125304~120385422&u_w=1280&u_h=720&url=https%3A%2F%2Fmnt-sa.com%2Far%2F%25D8%25A3%25D9%2586%25D8%25B8%25D9%2585%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A-%25D8%25B1%25D9%258A%25D9%2586-%25D8%25A8%25D9%258A%25D8%25B1%25D8%25AF-Rain-Bird%2Fc800345116&rcb=17&label=xLBBCKSDk6IYEKzln5wC&frm=0&tiba=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1910298592.1786667693&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS0wEAEQoqgcejN1tQJyr7uXrbEpYiOwuyGcSWGOoIRhnn3AuthwNR5Qyk3lDyHcSog7hWqfF7CEOmn3buZmNGYB3CToCNAPn2i8E8HG2Gv8i7JVlwquDrPbI4DBfG4igIy0sTxpsYCqNE7llzCQLszC5zPaNmFus4dBbXFgNwp5hzfV5v8jdRalu60mwzOan7N-WTY2xneBiCf7H7dYSCgFnZbtfD0eyehsoOuUqHu4oybgkcfnmQY8S2jwAPUNSN-amqgbKZGsE17PknkrKvtYPssT7D&random=3403172972&rmt_tld=1&ipr=y",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/596112044/?random=1786667695458&cv=11&fst=1786665600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68c1v9174294384z8811065323za20gzb811065323zd811065323xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131808~118897920~118897930~119367802~119367810~119527019~120125304~120385422&u_w=1280&u_h=720&url=https%3A%2F%2Fmnt-sa.com%2Far%2F%25D8%25A3%25D9%2586%25D8%25B8%25D9%2585%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A-%25D8%25B1%25D9%258A%25D9%2586-%25D8%25A8%25D9%258A%25D8%25B1%25D8%25AF-Rain-Bird%2Fc800345116&rcb=17&frm=0&tiba=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1910298592.1786667693&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS0wEAEQoqgTzEHQ4NuXh56ds7_9K9qxDhkd_M8ChQ9c9F701tNRw3DymdnJ--XrKeDYyPEcfmJoqRA75EBT5mt3fgcbK09jbh1zE1qmjfA6ImsMeTy2ys1mt7kUxbZkyTXp8F3LN6UH6Zcg5F0_b_kl_4YYFxcL5yBub14Jr_p_z0kGL2LmRetMpNINiYCeXhNJIq9uwQxe1qmecWgl-lDl7Ni1fOFYs70RChfqizh5RdWUN88nyxtfGNhzOdcd1YVSCLFhwbbYdw2I2iZIQmlffoHFbU&random=637053488&rmt_tld=0&ipr=y",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://www.google.com.eg/pagead/1p-user-list/596112044/?random=1786667695458&cv=11&fst=1786665600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68c1v9174294384z8811065323za20gzb811065323zd811065323xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131808~118897920~118897930~119367802~119367810~119527019~120125304~120385422&u_w=1280&u_h=720&url=https%3A%2F%2Fmnt-sa.com%2Far%2F%25D8%25A3%25D9%2586%25D8%25B8%25D9%2585%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A-%25D8%25B1%25D9%258A%25D9%2586-%25D8%25A8%25D9%258A%25D8%25B1%25D8%25AF-Rain-Bird%2Fc800345116&rcb=17&frm=0&tiba=%D8%AA%D8%B3%D9%88%D9%82%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%20%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%B1%D8%B4%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%B1%D9%8A%D9%86%20%D8%A8%D9%8A%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1910298592.1786667693&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS0wEAEQoqgTzEHQ4NuXh56ds7_9K9qxDhkd_M8ChQ9c9F701tNRw3DymdnJ--XrKeDYyPEcfmJoqRA75EBT5mt3fgcbK09jbh1zE1qmjfA6ImsMeTy2ys1mt7kUxbZkyTXp8F3LN6UH6Zcg5F0_b_kl_4YYFxcL5yBub14Jr_p_z0kGL2LmRetMpNINiYCeXhNJIq9uwQxe1qmecWgl-lDl7Ni1fOFYs70RChfqizh5RdWUN88nyxtfGNhzOdcd1YVSCLFhwbbYdw2I2iZIQmlffoHFbU&random=637053488&rmt_tld=1&ipr=y",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://analytics.tiktok.com/api/v2/pixel/act",
+    "method": "POST",
+    "resourceType": "ping"
+  },
+  {
+    "url": "https://mnt-sa.com/_app/e/api/s/track",
+    "method": "POST",
+    "resourceType": "fetch"
+  }
+]

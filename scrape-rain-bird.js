@@ -23,6 +23,7 @@ const TARGET_URL =
   'https://mnt-sa.com/ar/%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A-%D8%B1%D9%8A%D9%86-%D8%A8%D9%8A%D8%B1%D8%AF-Rain-Bird/c800345116';
 
 const OUTPUT_FILE = 'rain_bird_products.json';
+const FALLBACK_CATEGORY_ID = '800345116';
 
 // Salla stores commonly expose their product cards as the custom element
 // <salla-product-card> (Web Component), with a fallback to conventional
@@ -202,13 +203,51 @@ async function scrapeCategory() {
   console.log(`\nDone. Wrote ${products.length} products to ${OUTPUT_FILE}`);
 
   if (products.length === 0) {
-    console.log(
-      '\n⚠️  No products matched. The Salla theme on mnt-sa.com may use different ' +
-        'selectors than the ones tried here. Open the page in a real browser, ' +
-        'right-click a product card → Inspect, and update PRODUCT_CARD_SELECTORS ' +
-        '(and the inner title/price/image selectors) in this script accordingly.'
-    );
+    console.log('\nNo products found via DOM selectors — attempting API fallback...');
+    try {
+      const apiResults = await fetchProductsFromApi(FALLBACK_CATEGORY_ID);
+      if (apiResults && apiResults.length > 0) {
+        const apiMapped = apiResults.map((p) => ({
+          title_ar: p.title && p.title.ar ? p.title.ar : p.title && p.title.default ? p.title.default : null,
+          title_en: p.title && p.title.en ? p.title.en : null,
+          image_url: p.images && p.images[0] ? p.images[0].url : null,
+          price: p.price && p.price.formatted ? p.price.formatted : null,
+          currency: p.price && p.price.currency ? p.price.currency : null,
+          product_url: p.links && p.links.front ? p.links.front : null,
+          sku: p.sku || null,
+          stock_status: p.stock && p.stock.available === false ? 'out_of_stock' : 'in_stock_or_unknown'
+        }));
+        const apiResultObj = {
+          source_url: TARGET_URL,
+          category: { name_ar: categoryTitleAr || null, subcategories },
+          scraped_at: new Date().toISOString(),
+          product_count: apiMapped.length,
+          products: apiMapped
+        };
+        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(apiResultObj, null, 2), 'utf-8');
+        console.log(`Wrote ${apiMapped.length} products (API fallback) to ${OUTPUT_FILE}`);
+      } else {
+        console.log('API fallback returned no products. You may need to update selectors manually.');
+      }
+    } catch (err) {
+      console.error('API fallback failed:', err);
+    }
   }
+}
+
+async function fetchProductsFromApi(categoryId) {
+  const url = `https://api.salla.dev/store/v1/products?source=categories&filterable=1&source_value[]=${encodeURIComponent(
+    categoryId
+  )}`;
+  const res = await fetch(url, { method: 'GET', headers: { Accept: 'application/json' } });
+  if (!res.ok) throw new Error(`API request failed: ${res.status} ${res.statusText}`);
+  const body = await res.json();
+  // API returns an object with `data` or an array — try to normalize
+  if (Array.isArray(body)) return body;
+  if (body && Array.isArray(body.data)) return body.data;
+  // some Salla APIs wrap results in { products: [...] }
+  if (body && Array.isArray(body.products)) return body.products;
+  return [];
 }
 
 scrapeCategory().catch((err) => {
